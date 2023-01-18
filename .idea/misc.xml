@@ -8,7 +8,7 @@
         <entry key="app/src/main/res/drawable/ic_income.xml" value="0.1805" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.27562189054726366" />
-        <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.45677233429394815" />
+        <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_expenses.xml" value="0.2898550724637681" />
         <entry key="app/src/main/res/layout/fragment_incomes.xml" value="0.15579710144927536" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.303125" />

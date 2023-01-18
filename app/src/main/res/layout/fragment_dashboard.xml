@@ -17,11 +17,12 @@
             android:layout_height="220dp"
             android:layout_gravity="center"
             android:focusable="true"
+            app:cardElevation="2dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            card_view:cardBackgroundColor="#07264D"
+            card_view:cardBackgroundColor="@color/blue_strong"
             card_view:cardCornerRadius="16dp">
 
             <LinearLayout
@@ -32,6 +33,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/txtViewAmountMoney"
                     android:layout_width="wrap_content"
                     android:layout_height="54dp"
                     android:text="@string/val_money"
@@ -44,7 +46,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/available_money"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                    android:textColor="#BAC2CC"
+                    android:textColor="@color/gray"
                     app:fontFamily="sans-serif" />
 
                 <LinearLayout
@@ -56,32 +58,34 @@
 
                     <com.google.android.material.floatingactionbutton.FloatingActionButton
                         android:id="@+id/btn_add_income"
-                        android:layout_width="235dp"
-                        android:layout_height="61dp"
-                        android:alpha="0.25"
-                        android:backgroundTint="#FFFFFF"
-                        android:contentDescription="@string/expense"
-                        android:src="@drawable/ic_income"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_margin="10dp"
+                        android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"
                         android:layout_marginRight="10dp"
-                        android:layout_marginLeft="10dp"/>
+                        android:layout_marginBottom="10dp"
+                        android:alpha="0.65"
+                        android:backgroundTint="@color/green"
+                        android:contentDescription="@string/expense"
+                        app:borderWidth="0dp"
+                        app:srcCompat="@drawable/ic_income" />
 
 
                     <com.google.android.material.floatingactionbutton.FloatingActionButton
                         android:id="@+id/btn_add_expense"
-                        android:layout_width="235dp"
-                        android:layout_height="61dp"
-                        android:alpha="0.25"
-                        android:backgroundTint="#FFFFFF"
-                        android:contentDescription="@string/income"
-                        android:src="@drawable/ic_expense"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_margin="10dp"
+                        android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"
                         android:layout_marginRight="10dp"
-                        android:layout_marginLeft="10dp"/>
+                        android:layout_marginBottom="10dp"
+                        android:alpha="0.65"
+                        android:backgroundTint="@color/red"
+                        android:contentDescription="@string/income"
+                        app:borderWidth="0dp"
+                        app:srcCompat="@drawable/ic_expense" />
 
                 </LinearLayout>
 
@@ -99,7 +103,7 @@
                         android:layout_marginBottom="10dp"
                         android:text="@string/income"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="#BAC2CC"
+                        android:textColor="@color/gray"
                         app:fontFamily="sans-serif" />
 
                     <TextView
@@ -109,7 +113,7 @@
                         android:layout_marginBottom="10dp"
                         android:text="@string/expense"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="#BAC2CC"
+                        android:textColor="@color/gray"
                         app:fontFamily="sans-serif" />
 
                 </LinearLayout>
