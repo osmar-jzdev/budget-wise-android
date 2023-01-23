@@ -49,16 +49,15 @@ fun FullPieChart() {
                 .background(white)
                 .padding(1.dp)
             ,
-            verticalArrangement = Arrangement.spacedBy(30.dp),
+            verticalArrangement = Arrangement.spacedBy(1.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ){
             Box(
                 modifier = Modifier
-                    .fillMaxSize()
             ){
                 PieChart(
                     modifier = Modifier
-                        .size(500.dp),
+                        .size(400.dp),
                     input = listOf(
                         PieChartInput(
                             color = brightBlue,
@@ -103,8 +102,8 @@ fun FullPieChart() {
 @Composable
 fun PieChart(
     modifier: Modifier = Modifier,
-    radius:Float = 500f,
-    innerRadius:Float = 250f,
+    radius:Float = 450f,
+    innerRadius:Float = 225f,
     transparentWidth:Float = 10f,
     input:List<PieChartInput>,
     centerText:String = ""
