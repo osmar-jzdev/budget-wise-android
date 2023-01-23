@@ -11,113 +11,138 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/dash_card_view"
-            android:layout_width="350dp"
-            android:layout_height="220dp"
-            android:layout_gravity="center"
-            android:focusable="true"
-            app:cardElevation="2dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            card_view:cardBackgroundColor="@color/blue_strong"
-            card_view:cardCornerRadius="20dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
+                android:layout_height="wrap_content"
                 android:gravity="center"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/txtViewAmountMoney"
-                    android:layout_width="wrap_content"
-                    android:layout_height="54dp"
-                    android:text="@string/val_money"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                    android:textColor="@color/white"
-                    app:fontFamily="sans-serif" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/available_money"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                    android:textColor="@color/gray"
-                    app:fontFamily="sans-serif" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:orientation="horizontal">
-
-                    <com.google.android.material.floatingactionbutton.FloatingActionButton
-                        android:id="@+id/btn_add_income"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_margin="10dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:alpha="0.65"
-                        android:backgroundTint="@color/green"
-                        android:contentDescription="@string/expense"
-                        app:borderWidth="0dp"
-                        app:srcCompat="@drawable/ic_income" />
+                android:orientation="vertical"
+                >
 
 
-                    <com.google.android.material.floatingactionbutton.FloatingActionButton
-                        android:id="@+id/btn_add_expense"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:alpha="0.65"
-                        android:backgroundTint="@color/red"
-                        android:contentDescription="@string/income"
-                        app:borderWidth="0dp"
-                        app:srcCompat="@drawable/ic_expense" />
-
-                </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/dash_card_view"
+                android:layout_width="350dp"
+                android:layout_height="220dp"
+                android:layout_gravity="center"
+                android:focusable="true"
+                app:cardElevation="2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                card_view:cardBackgroundColor="@color/blue_strong"
+                card_view:cardCornerRadius="20dp">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:orientation="horizontal">
+                    android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/txtViewAmountMoney"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="15dp"
-                        android:layout_marginBottom="10dp"
-                        android:text="@string/income"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="@color/gray"
+                        android:layout_height="54dp"
+                        android:text="@string/val_money"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="@color/white"
                         app:fontFamily="sans-serif" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="12dp"
-                        android:layout_marginBottom="10dp"
-                        android:text="@string/expense"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:text="@string/available_money"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
                         android:textColor="@color/gray"
                         app:fontFamily="sans-serif" />
 
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/btn_add_income"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:alpha="0.65"
+                            android:backgroundTint="@color/green"
+                            android:contentDescription="@string/expense"
+                            app:borderWidth="0dp"
+                            app:srcCompat="@drawable/ic_income" />
+
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/btn_add_expense"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:alpha="0.65"
+                            android:backgroundTint="@color/red"
+                            android:contentDescription="@string/income"
+                            app:borderWidth="0dp"
+                            app:srcCompat="@drawable/ic_expense" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="@string/income"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/gray"
+                            app:fontFamily="sans-serif" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="@string/expense"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/gray"
+                            app:fontFamily="sans-serif" />
+
+                    </LinearLayout>
                 </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.compose.ui.platform.ComposeView
+                android:id="@+id/compose_chartView"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_marginTop="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dash_card_view"
+                app:layout_constraintHorizontal_bias="0.5"/>
+
             </LinearLayout>
-        </androidx.cardview.widget.CardView>
+        </ScrollView>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.compose.ui.platform.ComposeView
 import tech.osmardev.budgetwise.R
 
 // TODO: Rename parameter arguments, choose names that match
@@ -16,11 +17,6 @@ private const val ARG_PARAM2 = "param2"
  * Created by Osmar Jrz. on 09/01/23
  */
 
-/**
- * A simple [Fragment] subclass.
- * Use the [DashboardFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class DashboardFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
@@ -39,7 +35,11 @@ class DashboardFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_dashboard, container, false)
+        return inflater.inflate(R.layout.fragment_dashboard, container, false).apply {
+            findViewById<ComposeView>(R.id.compose_chartView).setContent {
+                FullPieChart()
+            }
+        }
     }
 
     companion object {
