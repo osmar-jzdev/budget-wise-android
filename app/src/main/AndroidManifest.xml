@@ -14,7 +14,13 @@
         android:theme="@style/Theme.BudgetWise"
         tools:targetApi="31">
         <activity
-            android:name=".PieChart"
+            android:name=".view.expenses.AddExpenseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.incomes.AddIncomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.dashboard.DashboardPieChart"
             android:exported="false"
             android:label="@string/title_activity_pie_chart"
             android:theme="@style/Theme.BudgetWise" />

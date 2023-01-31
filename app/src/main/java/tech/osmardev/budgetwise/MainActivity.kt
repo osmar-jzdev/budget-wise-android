@@ -1,13 +1,17 @@
 package tech.osmardev.budgetwise
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import tech.osmardev.budgetwise.databinding.ActivityMainBinding
+import tech.osmardev.budgetwise.view.expenses.AddExpenseActivity
+import tech.osmardev.budgetwise.view.incomes.AddIncomeActivity
 
 /**
  * Created by Osmar Jrz. on 09/01/23
@@ -34,5 +38,15 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+        val buttonAddIncomeDashCardView: View = findViewById(R.id.btn_add_income)
+        buttonAddIncomeDashCardView.setOnClickListener { _ ->
+            startActivity(Intent(this, AddIncomeActivity::class.java))
+        }
+
+        val buttonAddExpenseDashCardView: View = findViewById(R.id.btn_add_expense)
+        buttonAddExpenseDashCardView.setOnClickListener { _ ->
+            startActivity(Intent(this, AddExpenseActivity::class.java))
+        }
     }
 }
