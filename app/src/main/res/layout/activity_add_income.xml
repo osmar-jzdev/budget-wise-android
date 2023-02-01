@@ -28,8 +28,8 @@
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
-                android:layout_height="16dp"
-                android:text="TextView" />
+                android:layout_height="wrap_content"
+                android:text="@string/income_name_label" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -67,8 +67,8 @@
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
-                android:layout_height="16dp"
-                android:text="TextView" />
+                android:layout_height="wrap_content"
+                android:text="@string/quantity" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -85,7 +85,7 @@
                     android:id="@+id/txtInput_incomeValue"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/income"
+                    android:hint="@string/money_value_generic"
                     android:imeOptions="actionDone"
                     android:inputType="number"
                     android:maxLines="1"/>
@@ -98,7 +98,7 @@
             android:layout_width="match_parent"
             android:layout_height="68dp"
             android:layout_marginTop="28dp"
-            android:text="@string/income"
+            android:text="@string/add_button"
             android:textColor="@color/white"
             android:textAllCaps="false"
             app:backgroundTint="@color/blue_main"
