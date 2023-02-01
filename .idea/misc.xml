@@ -13,6 +13,7 @@
         <entry key="app/src/main/res/layout/activity_add_expense.xml" value="0.375" />
         <entry key="app/src/main/res/layout/activity_add_income.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.15476190476190477" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_expenses.xml" value="0.2898550724637681" />
         <entry key="app/src/main/res/layout/fragment_incomes.xml" value="0.15579710144927536" />

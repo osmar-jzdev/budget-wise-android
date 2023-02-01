@@ -18,4 +18,7 @@
     <string name="quantity">Cantidad</string>
     <string name="money_value_generic">$0.0</string>
     <string name="add_button">Agregar</string>
+    <!-- Splash activity  -->
+    <string name="welcome_back_finance_app">Bienvenido a tu app de finanzas personales</string>
+    <string name="by_projectName">osmardev.tech</string>
 </resources>
