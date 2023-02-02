@@ -35,12 +35,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                app:boxBackgroundColor="@color/blue_inactive"
                 app:boxBackgroundMode="outline"
-                app:hintEnabled="false"
                 app:boxCornerRadiusBottomEnd="16dp"
                 app:boxCornerRadiusBottomStart="16dp"
                 app:boxCornerRadiusTopEnd="16dp"
-                app:boxCornerRadiusTopStart="16dp">
+                app:boxCornerRadiusTopStart="16dp"
+                app:hintEnabled="false">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/txtInput_incomeName"
@@ -74,12 +75,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                app:boxBackgroundColor="@color/blue_inactive"
                 app:boxBackgroundMode="outline"
-                app:hintEnabled="false"
                 app:boxCornerRadiusBottomEnd="16dp"
                 app:boxCornerRadiusBottomStart="16dp"
                 app:boxCornerRadiusTopEnd="16dp"
-                app:boxCornerRadiusTopStart="16dp">
+                app:boxCornerRadiusTopStart="16dp"
+                app:boxStrokeColor="#F0F7FF"
+                app:hintEnabled="false">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/txtInput_incomeValue"
@@ -87,8 +90,9 @@
                     android:layout_height="wrap_content"
                     android:hint="@string/money_value_generic"
                     android:imeOptions="actionDone"
-                    android:inputType="number"
-                    android:maxLines="1"/>
+                    android:inputType="numberDecimal"
+                    android:digits="0123456789."
+                    android:maxLines="1" />
             </com.google.android.material.textfield.TextInputLayout>
 
         </LinearLayout>
