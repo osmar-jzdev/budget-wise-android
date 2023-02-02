@@ -12,7 +12,7 @@ class Splash : AppCompatActivity() {
         setContentView(R.layout.activity_splash)
         supportActionBar?.setBackgroundDrawable(ColorDrawable(resources.getColor(R.color.white)))
         thread{
-            Thread.sleep(3000)
+            Thread.sleep(2000)
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
