@@ -16,7 +16,7 @@
     <string name="expense_name_label">Nombre del gasto</string>
     <string name="income_name_label">Nombre del ingreso</string>
     <string name="quantity">Cantidad</string>
-    <string name="money_value_generic">$0.0</string>
+    <string name="money_value_generic">$1.0</string>
     <string name="add_button">Agregar</string>
     <string name="error_empty_box">Este campo no puede quedar vacío</string>
     <!-- Splash activity  -->
