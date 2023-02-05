@@ -41,6 +41,9 @@ class AddExpenseActivity : AppCompatActivity() {
                     txtInputExpenseValue.text.toString().isEmpty() -> {
                         binding.txtInputExpenseValue.error = resources.getString(R.string.error_empty_box)
                     }
+                    txtInputExpenseValue.text.toString().toFloat() == 0.0F-> {
+                        binding.txtInputExpenseValue.error = resources.getString(R.string.error_empty_box)
+                    }
                     else -> {
                         startActivity(Intent(this@AddExpenseActivity, MainActivity::class.java))
                         finish()

@@ -38,6 +38,9 @@ class AddIncomeActivity : AppCompatActivity() {
                     txtInputIncomeValue.text.toString().isEmpty() -> {
                         binding.txtInputIncomeValue.error = resources.getString(R.string.error_empty_box)
                     }
+                    txtInputIncomeValue.text.toString().toFloat() == 0.0F -> {
+                        binding.txtInputIncomeValue.error = resources.getString(R.string.error_empty_box)
+                    }
                     else -> {
                         startActivity(Intent(this@AddIncomeActivity, MainActivity::class.java))
                         finish()
