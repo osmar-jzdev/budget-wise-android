@@ -1,4 +1,4 @@
-package tech.osmardev.budgetwise.data
+package tech.osmardev.budgetwise.model
 
 import androidx.annotation.WorkerThread
 import kotlinx.coroutines.flow.Flow

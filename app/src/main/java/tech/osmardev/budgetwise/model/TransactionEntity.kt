@@ -1,4 +1,4 @@
-package tech.osmardev.budgetwise.data
+package tech.osmardev.budgetwise.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

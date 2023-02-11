@@ -1,4 +1,4 @@
-package tech.osmardev.budgetwise.data
+package tech.osmardev.budgetwise.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
@@ -7,6 +7,9 @@ import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import tech.osmardev.budgetwise.model.DBTransactions
+import tech.osmardev.budgetwise.model.TransactionEntity
+import tech.osmardev.budgetwise.model.TransactionRepository
 
 /**
  * Created by Osmar Jrz. on 04/02/23

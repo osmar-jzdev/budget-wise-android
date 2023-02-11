@@ -1,4 +1,4 @@
-package tech.osmardev.budgetwise.data
+package tech.osmardev.budgetwise.model
 
 import android.content.Context
 import androidx.room.Database
